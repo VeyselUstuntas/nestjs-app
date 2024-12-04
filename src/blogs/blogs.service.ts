@@ -1,5 +1,5 @@
 import { Injectable } from '@nestjs/common';
-import { CreateDto } from './DTO/Create.dto';
+import { CreateDto } from './dto/Create.dto';
 
 @Injectable()
 export class BlogsService {
@@ -12,6 +12,7 @@ export class BlogsService {
     }
 
     blogs() : CreateDto[]{
+        console.log("blog servis çalıştı");
         return this.blogList;
     }
 }
